@@ -1,3 +1,4 @@
+
 button.buscar{
 	text-decoration: none;
     padding: 5px;
@@ -12,11 +13,82 @@ button.buscar{
 	background-color: #666666;
 }
 
+div.logo{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+span { 
+  font-size: 2em;
+  font-weight: bold;
+}
+
+span b { 
+  font-size: 14px;
+  font-weight: bold;
+
+ }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+b.visitas{
+  color: #6D1B93;
+  font-size: 22px;
+}
+
+b.ventas{
+  color: #255B87;
+  font-size: 22px;
+
+}
+
+b.comentarios{
+  color: #3FB166;
+  font-size: 22px;
+
+}
+
+b.ganancias{
+  color: red;
+  font-size: 22px;
+
+}
+
+div.iconos{
+  background-color: #CCCCCC;
+  margin: 0px  5px;
+  width: 24%;
+  height: auto;
+
+}
+
+div.letra{
+  margin: 30px 15px 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  width: 20%;
+  height: auto;
+  background-color: #CCCCCC;
+  padding: 10px;
+  margin: 0 auto;
+}
+
 .input-container {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   width: 100%;
-  height: 50px;
+  height: 35px;
   border: none;
   color: #CCCCCC;
   margin-bottom: 15px;
@@ -26,15 +98,15 @@ button.buscar{
   padding: 5px;
   background: #CCCCCC;
   color: black;
-  min-width: 50px;
-  min-height: 50px;
+  min-width: 45px;
+  min-height: 35px;
   text-align: center;
 }
 
 .input-field {
-  width: 100%;
+  width: 40%;
   background: #CCCCCC;
-  padding: 5px;
+  padding: 2px;
   padding-left: 15px;
   padding-right: 15px;
   outline: none;
@@ -42,11 +114,182 @@ button.buscar{
   /*border: 100px;*/
 }
 
-.input-field:focus {
+/*.input-field:focus {
   border: 2px solid dodgerblue;
-}
-/* barra lateral */
+}*/
 
+.input-group-prepend span{
+width: 90px;
+height: 100px;
+margin: 0px 0px 10px;
+background-color: #CCCCCC;
+color: #9D9D9B;
+border:0px !important;
+}
+
+.left {
+  background-color:#CCCCCC;
+  padding: 10px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+.main1 {
+  background-color:#CCCCCC;
+  padding: 10px;
+  float:left;
+  width:30%; /* The width is 60%, by default */
+}
+.main2 {
+  background-color:#CCCCCC;
+  padding: 10px;
+  float:left;
+  width:30%; /* The width is 60%, by default */
+}
+
+.right {
+  background-color:#CCCCCC;
+  padding: 10px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+.graficos{
+  background-color: #CCCCCC;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  margin: 0px 0px 0px;
+}
+img.grafico1{
+  background-color: #CCCCCC;
+  padding: 20px;
+  width: 100%;
+  align-content: center;
+  margin: 0 0px 0;
+}
+
+img.grafico2{
+  background-color: #CCCCCC;
+  padding: 15px;
+  width: 60%;
+  align-content: center;
+  margin: 0 0px 0;
+}
+
+img.lineal{
+   background-color: #CCCCCC;
+  padding: 15px;
+  width: 75%;
+  align-content: right;
+}
+
+div.graph{
+  background-color: #CCCCCC;
+  margin: 0px  6px;
+  width: 48%;
+  height: auto;
+  padding: 0px;
+}
+/*
+img.logoUsr {
+  width: 35%;
+  border-radius: 40%;
+  position:absolute;
+  left: 5px;
+  top: 10px;
+  z-index:1;
+}*/
+
+/*.arriba {
+  background-color:#CCCCCC;
+  padding: 10px;
+  float:left;
+  width:20%; /* The width is 20%, by default 
+}*/
+
+/*.abajo {
+  background-color:#CCCCCC;
+  padding: 10px;
+  float:left;
+  width:20%; /* The width is 20%, by default 
+}*/
+
+.izq {
+  background-color:#CCCCCC;
+  padding: 10px;
+  float:left;
+  width:50%; /* The width is 20%, by default */ 
+}
+
+.der {
+  background-color:#CCCCCC;
+  padding: 10px;
+  float:left;
+  width:50%; /* The width is 20%, by default */
+}
+
+.footer{
+  background-color: #CCCCCC;
+  margin: 0;
+}
+
+/*@media screen and (max-width:800px) {
+  .arriba, .abajo {
+    width:100%; 
+  }*/
+}
+
+@media screen and (max-width:600px) {
+  .izq, .der {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:600px) {
+  .left, .main1, .main2, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+/*
+
+#site-navigation .menu > ul > li:hover > a:before, 
+#site-navigation .menu > ul > li.current_page_item > a:before, 
+#site-navigation .menu > ul > li.current-menu-item > a:before, 
+#site-navigation .menu > ul > li.current_page_ancestor > a:before, 
+#site-navigation .menu > ul > li.current-menu-ancestor > a:before{ text-decoration: none; 
+content: ""; 
+height: 5px; 
+left: 0; 
+position: absolute; 
+top: -5px; 
+width: 100%; 
+}
+.logo-center #site-navigation .menu > ul > li:hover > a:before, .logo-center #site-navigation .menu > ul > li.current_page_item > a:before, .logo-center #site-navigation .menu > ul > li.current_page_ancestor > a:before, .logo-center #site-navigation .menu > ul > li.current-menu-ancestor > a:before{ display: none; }
+#site-navigation .menu ul ul{ background: none repeat scroll 0 0 #FFF; border-bottom: 2px solid #d31716; border-top: 2px solid #d31716; box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); display: none; left: 0; position: absolute; top: 100%; transition: all 0.3s ease-in-out 0s; z-index: 99999; font-family: 'Open Sans Bold', sans-serif; }
+#site-navigation .menu li:hover > ul{ display: block; }
+#site-navigation .menu ul ul li{ border-bottom: 2px solid #DDD; display: block; font-size: 13px; line-height: 20px; margin: 0 !important; text-align: left; }
+#site-navigation .menu ul ul li:last-child{ border-bottom: none; }
+#site-navigation .menu ul ul li a{ color: #666; display: block; font-weight: 300; min-width: 140px; padding: 10px 15px; position: relative; text-decoration: none; }
+#site-navigation .menu ul ul li > a:hover:before, #site-navigation .menu ul ul li.current_page_item > a:before{ background: #F0563D; content: ""; height: 2px; left: 0; position: absolute; top: -2px; width: 100%; }
+#site-navigation .menu ul ul li > a:hover, #site-navigation .menu ul ul li.current_page_item > a{ color: #d31716; }
+#site-navigation .menu ul ul ul{ top: -2px; left: 100%; }
+#site-navigation .menu ul ul ul{
+    right: 100%;
+    left: auto;
+}
+
+/*-With Sub pages-*//*
+#site-navigation .menu > ul > li.menu-item-has-children > a:before{ color: #FFF; content: '\f107'; font-family: FontAwesome; font-size: 10px; vertical-align: 1px; }
+#site-navigation .menu > ul > li.menu-item-has-children > a::after{ content: '\f107'; font-family: FontAwesome; font-size: 14px; margin-left: 7px; vertical-align: 1px; }
+#site-navigation .menu > ul > li > ul > li.menu-item-has-children > a::after{ color: rgb(34, 34, 34); content: '\f105'; font-family: FontAwesome; font-size: 10px; vertical-align: 1px; float: right; }
+
+ */
+
+/* barra lateral */
+/*
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 }
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
@@ -183,4 +426,4 @@ height: 100%;
   font-style: normal;
   font-weight: 300;
   src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
-}
+}*/
