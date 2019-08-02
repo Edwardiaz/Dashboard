@@ -12,51 +12,46 @@ button.buscar{
     border: none;
 	background-color: #666666;
 }
-
-div.logo{
+.logo h2{
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 35px;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  
 }
-
 span { 
   font-size: 2em;
   font-weight: bold;
 }
-
 span b { 
   font-size: 14px;
   font-weight: bold;
 
  }
-
 img {
-  width: 100%;
+  width: 60%;
   height: auto;
 }
-
 b.visitas{
   color: #6D1B93;
   font-size: 22px;
 }
-
 b.ventas{
   color: #255B87;
   font-size: 22px;
 
 }
-
 b.comentarios{
   color: #3FB166;
   font-size: 22px;
 
 }
-
 b.ganancias{
   color: red;
   font-size: 22px;
 
 }
-
 div.iconos{
   background-color: #CCCCCC;
   margin: 0px  5px;
@@ -64,15 +59,12 @@ div.iconos{
   height: auto;
 
 }
-
 div.letra{
   margin: 30px 15px 0;
 }
-
 * {
   box-sizing: border-box;
 }
-
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -83,7 +75,6 @@ div.letra{
   padding: 10px;
   margin: 0 auto;
 }
-
 .input-container {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -93,7 +84,6 @@ div.letra{
   color: #CCCCCC;
   margin-bottom: 15px;
 }
-
 .icon {
   padding: 5px;
   background: #CCCCCC;
@@ -102,9 +92,8 @@ div.letra{
   min-height: 35px;
   text-align: center;
 }
-
 .input-field {
-  width: 40%;
+  width: 50%;
   background: #CCCCCC;
   padding: 2px;
   padding-left: 15px;
@@ -113,11 +102,6 @@ div.letra{
   border: none;
   /*border: 100px;*/
 }
-
-/*.input-field:focus {
-  border: 2px solid dodgerblue;
-}*/
-
 .input-group-prepend span{
 width: 90px;
 height: 100px;
@@ -192,42 +176,19 @@ div.graph{
   height: auto;
   padding: 0px;
 }
-/*
-img.logoUsr {
-  width: 35%;
-  border-radius: 40%;
-  position:absolute;
-  left: 5px;
-  top: 10px;
-  z-index:1;
-}*/
-
-/*.arriba {
-  background-color:#CCCCCC;
-  padding: 10px;
-  float:left;
-  width:20%; /* The width is 20%, by default 
-}*/
-
-/*.abajo {
-  background-color:#CCCCCC;
-  padding: 10px;
-  float:left;
-  width:20%; /* The width is 20%, by default 
-}*/
 
 .izq {
   background-color:#CCCCCC;
   padding: 10px;
   float:left;
-  width:50%; /* The width is 20%, by default */ 
+  width:50%; 
 }
 
 .der {
   background-color:#CCCCCC;
   padding: 10px;
   float:left;
-  width:50%; /* The width is 20%, by default */
+  width:50%; 
 }
 
 .footer{
@@ -235,58 +196,140 @@ img.logoUsr {
   margin: 0;
 }
 
-/*@media screen and (max-width:800px) {
-  .arriba, .abajo {
-    width:100%; 
-  }*/
 }
 
-@media screen and (max-width:600px) {
+@media screen and (min-width:700px) {
   .izq, .der {
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    width:100%; /* La anchura es 100%, cuando el viewport sea 700px o mas pequeño...*/
   }
 }
 
-/* Use a media query to add a break point at 800px: */
-@media screen and (max-width:600px) {
+/* Se usa un media query para agregar un punto de quiebre a los 700px */
+@media screen and (max-width:700px) {
   .left, .main1, .main2, .right {
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    width:100%; /* La anchura es 100%, cuando el viewport sea 800px o mas pequeño...*/
   }
 }
-/*
 
-#site-navigation .menu > ul > li:hover > a:before, 
-#site-navigation .menu > ul > li.current_page_item > a:before, 
-#site-navigation .menu > ul > li.current-menu-item > a:before, 
-#site-navigation .menu > ul > li.current_page_ancestor > a:before, 
-#site-navigation .menu > ul > li.current-menu-ancestor > a:before{ text-decoration: none; 
-content: ""; 
-height: 5px; 
-left: 0; 
-position: absolute; 
-top: -5px; 
-width: 100%; 
+.nombre{
+  position: absolute;
+  top: 40px;
+  right: 105px;
+  z-index: 1;
+  display: inline
+  font-size: 8px;
+  font-weight: 600;
+
 }
-.logo-center #site-navigation .menu > ul > li:hover > a:before, .logo-center #site-navigation .menu > ul > li.current_page_item > a:before, .logo-center #site-navigation .menu > ul > li.current_page_ancestor > a:before, .logo-center #site-navigation .menu > ul > li.current-menu-ancestor > a:before{ display: none; }
-#site-navigation .menu ul ul{ background: none repeat scroll 0 0 #FFF; border-bottom: 2px solid #d31716; border-top: 2px solid #d31716; box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); display: none; left: 0; position: absolute; top: 100%; transition: all 0.3s ease-in-out 0s; z-index: 99999; font-family: 'Open Sans Bold', sans-serif; }
-#site-navigation .menu li:hover > ul{ display: block; }
-#site-navigation .menu ul ul li{ border-bottom: 2px solid #DDD; display: block; font-size: 13px; line-height: 20px; margin: 0 !important; text-align: left; }
-#site-navigation .menu ul ul li:last-child{ border-bottom: none; }
-#site-navigation .menu ul ul li a{ color: #666; display: block; font-weight: 300; min-width: 140px; padding: 10px 15px; position: relative; text-decoration: none; }
-#site-navigation .menu ul ul li > a:hover:before, #site-navigation .menu ul ul li.current_page_item > a:before{ background: #F0563D; content: ""; height: 2px; left: 0; position: absolute; top: -2px; width: 100%; }
-#site-navigation .menu ul ul li > a:hover, #site-navigation .menu ul ul li.current_page_item > a{ color: #d31716; }
-#site-navigation .menu ul ul ul{ top: -2px; left: 100%; }
-#site-navigation .menu ul ul ul{
-    right: 100%;
-    left: auto;
+.notificacion{
+  width: 70px;
+  position: absolute;
+  top: 20px;
+  left: 295px;
+  z-index: 1;
+
+}
+.notificacion2{
+  width: 70px;
+  position: absolute;
+  top: 20px;
+  left: 360px;
+  z-index: 1;
+
 }
 
-/*-With Sub pages-*//*
-#site-navigation .menu > ul > li.menu-item-has-children > a:before{ color: #FFF; content: '\f107'; font-family: FontAwesome; font-size: 10px; vertical-align: 1px; }
-#site-navigation .menu > ul > li.menu-item-has-children > a::after{ content: '\f107'; font-family: FontAwesome; font-size: 14px; margin-left: 7px; vertical-align: 1px; }
-#site-navigation .menu > ul > li > ul > li.menu-item-has-children > a::after{ color: rgb(34, 34, 34); content: '\f105'; font-family: FontAwesome; font-size: 10px; vertical-align: 1px; float: right; }
+.side-nav{
+  position: absolute;
+  width: 100%;
+  background-color: #CCCCCC;
+  height: 167vh;
+  z-index:1;
+  
+  
+}
+.side-nav ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.side-nav ul li {
+  padding: 16px 16px;
+  border-bottom:  #3c506a;
+  position: relative;
+}
+.side-nav ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+img.icon1{
+  width:550%;
+margin: 0;
 
- */
+}
+.side-nav ul li span:nth-child(2){
+  display: none;
+}
+
+
+
+@media screen and (min-width: 700px){
+  .side-nav{
+    width: 80px;
+  }
+  .side ul li img{
+    width: 45px;
+  }
+  .side-nav ul li span:nth-child(2){
+    display: all;
+  }
+}
+@media screen and (max-width: 700px){
+  .side-nav{
+    width: 80px;
+  }
+  .side ul li img{
+    width: 45px;
+  }
+  .side-nav ul li span:nth-child(2){
+    display: all;
+  }
+}
+
+@media screen and (min-height: 1000px){
+  .side-nav{
+    width: 50px;
+  }
+  .side-nav ul li {
+    text-align: left;
+  }
+  .side.nav ul li span:nth-child(2){
+    display: inline;
+  }
+}
+
+/*.side-nav ul li.active:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}*/
+
+.main-menu li:hover>a,
+nav.main-menu li.active>a,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus,
+.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#666666;
+width: 500px;
+}
 
 /* barra lateral */
 /*
@@ -335,7 +378,7 @@ margin:7px 0;
 .main-menu li {
 position:relative;
 display:block;
-width:250px;
+width:260px;
 }
 
 .main-menu li>a {
@@ -426,4 +469,5 @@ height: 100%;
   font-style: normal;
   font-weight: 300;
   src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
-}*/
+}
+*/
